@@ -554,6 +554,11 @@ if __name__ == '__main__':
     print("################################")
     twoI_tensor = []
     twoI_C = []
+    if(l == 0):
+        print(l1)
+        print(l2)
+        exit()
+
     for i in l.args:
         cp = 1
         var = ""
