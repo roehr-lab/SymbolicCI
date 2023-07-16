@@ -7,7 +7,7 @@ a given number of electron.
 -----------
 Description
 -----------
-This program the generate the configurations state function using branching diagram
+This program the generate the configurations state function using branching diagram for a given spin state based on $S^{2}$ and $S_{z}$ with a specific spin configuration of it's subsystem. The program allow the configuration of electrons to be distributed in set of spatial orbital. 
 
 
 ------------
