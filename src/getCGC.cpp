@@ -40,7 +40,7 @@ public:
                 ad.push_back(new_plc);
             }
         }
-        for (int i = 0; i < this->conn.size() ;i++){
+        for (size_t i = 0; i < this->conn.size() ;i++){
             plc[this->i] = this->j;
             auto sharedCon = this->conn[i].lock();
             sharedCon->tracePrev(plc,ad);
@@ -55,7 +55,7 @@ public:
 tuple< vector<vector<shared_ptr<point>>>, vector<vector<int>>> generateSTree(int n_electron){
     vector<vector<int>> spoint;
     vector< vector < shared_ptr<point> > > s_point;
-    for(int i = 0; i < n_electron + 1; i++){
+    for(size_t i = 0; i < n_electron + 1; i++){
         vector<int> bp;
         vector< shared_ptr<point>> bp_;
         for(int j = 0; j < i + 1; j++){
@@ -77,10 +77,10 @@ tuple< vector<vector<shared_ptr<point>>>, vector<vector<int>>> generateSTree(int
 vector<vector<shared_ptr<point>>> make_m(vector<int> multiplicity){
     vector<vector<shared_ptr<point>>> mpoint;
     vector<int> min_m(multiplicity.size());
-    for(int i = 0; i < multiplicity.size(); i++){
+    for(size_t i = 0; i < multiplicity.size(); i++){
         min_m[i] = -multiplicity[i];
     }
-    for(int i = 0; i < multiplicity.size(); i++ ){
+    for(size_t i = 0; i < multiplicity.size(); i++ ){
         vector<shared_ptr<point>> s1p;
         for(int j = min_m[i]; j < multiplicity[i]+1; j+=2 ){
             s1p.push_back(make_shared<point>(i,j));
@@ -91,10 +91,10 @@ vector<vector<shared_ptr<point>>> make_m(vector<int> multiplicity){
 }
 
 void make_Mconnection(vector<vector<shared_ptr<point>>> &mpoint){
-    for(int i = 0; i < mpoint.size(); i++){
-        for(int j = 0; j < mpoint[i].size(); j++){
+    for(size_t i = 0; i < mpoint.size(); i++){
+        for(size_t j = 0; j < mpoint[i].size(); j++){
             if(i > 0){
-                for(int k = 0; k < mpoint[i - 1].size() ; k++){
+                for(size_t k = 0; k < mpoint[i - 1].size() ; k++){
                     if(abs(mpoint[i][j]->j - mpoint[i-1][k]->j) == 1){
                         mpoint[i][j]->conn.push_back(weak_ptr<point>(mpoint[i-1][k]));
                     }
@@ -186,7 +186,7 @@ int main_(){
         
         for(finalM = 0; finalM < c[n_electron].size() ; finalM++){
             vector<int> bm2;
-            for(int i = 0; i < n_electron+1;i++){
+            for(size_t i = 0; i < n_electron+1;i++){
                 bm2.push_back(-1);
             }
             vector<vector<int>> bl2;
@@ -195,10 +195,10 @@ int main_(){
             
             cout<<"\\begin{equation}\n \\substack{\n";
             cout<<"^{"<<mpath+1<<"} \\vert "<<finalS<<":"<<c[n_electron][finalM]->j*0.5<<"\\rangle = "<<endl;
-            for(int j = 0; j < bl2.size(); j++){
+            for(size_t j = 0; j < bl2.size(); j++){
                 double cg = 1;
                 string sl = " ";
-                for(int i = 0 ; i < bl2[j].size() ; i++){
+                for(size_t i = 0 ; i < bl2[j].size() ; i++){
                     if(i > 0){
                         cg *= ClebschGordan(bl[mpath][i-1]*0.5, 0.5 , bl2[j][i-1]*0.5,(bl2[j][i] - bl2[j][i-1])*0.5, bl[mpath][i]*0.5, bl2[j][i]*0.5 );
                         if(bl2[j][i] -bl2[j][i-1] != 1){
