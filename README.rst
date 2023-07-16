@@ -19,3 +19,15 @@ Installation
 .. code-block:: bash
 
     $pip install git+https://github.com/roehr-lab/SymbolicCI.git
+
+------------
+Requirements
+------------
+
+Required python packages:
+
+ * pytorch
+ * numpy, scipy, matplotlib
+ * sympy
+ * https://github.com/Moh-Maher/cgcCALC This program uses modified the copy of the code.
+  
