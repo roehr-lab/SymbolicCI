@@ -37,4 +37,13 @@ Required python packages:
  * numpy, scipy, matplotlib
  * sympy
  * https://github.com/Moh-Maher/cgcCALC This program uses modified the copy of the code.
+ * pip 10+
 
+------
+Author
+------
+* Anurag Singh
+
+---------
+Reference
+---------
