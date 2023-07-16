@@ -16,7 +16,7 @@ module2 = [
         ["%s/%s"%(projectPath,'src/getCGC.cpp'),
         "%s/%s"%(projectPath,'src/cgc.cpp'),
         "%s/%s"%(projectPath,'src/latex.cpp'),
-        "%s/%s"%(projectPath,'src/layout.cpp'),
+        #"%s/%s"%(projectPath,'src/layout.cpp'),
         "%s/%s"%(projectPath,'src/utilities.cpp'),],  # Sort source files for reproducibility
         include_dirs = ['/usr/local/include',
                                     '/usr/include',
