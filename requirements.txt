@@ -1,0 +1,9 @@
+setuptools
+wheel
+pybind11
+numpy
+sympy
+torch
+pybind11
+npyscreen
+pathos
