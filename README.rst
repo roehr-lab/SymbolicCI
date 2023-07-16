@@ -16,4 +16,4 @@ Installation
 
 .. code-block:: bash
 
-$pip install git+https://github.com/roehr-lab/SymbolicCI.git
+    $pip install git+https://github.com/roehr-lab/SymbolicCI.git
