@@ -20,6 +20,13 @@ Installation
 
     $pip install git+https://github.com/roehr-lab/SymbolicCI.git
 
+-----
+Run
+-----
+.. code-block:: bash
+
+    SymbolicCI-Coupling.py
+
 ------------
 Requirements
 ------------
@@ -30,4 +37,4 @@ Required python packages:
  * numpy, scipy, matplotlib
  * sympy
  * https://github.com/Moh-Maher/cgcCALC This program uses modified the copy of the code.
-  
+
