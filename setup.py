@@ -31,7 +31,7 @@ setup(name='SymbolicCI',
         author='Anurag Singh',
         author_email='anuragsingh291293@gmail.com',
         url='https://github.com/darkcoordinate',
-        requires=[
+        install_requires=[
             'numpy',
             'sympy',
             'torch',
