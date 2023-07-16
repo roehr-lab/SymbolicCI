@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import os
 import random # for random data generation
 from multiprocessing import Pool
