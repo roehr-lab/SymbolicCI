@@ -208,39 +208,40 @@ class MyApplication2(npyscreen.NPSAppManaged):
 
 
 if __name__ == '__main__':
-    #TestApp2 = MyApplication2()
-    #TestApp2.run()
-    #K_nelec = int(TestApp2._Forms["MAIN"].numElectron.value)
-    #K_finalS = int(TestApp2._Forms["MAIN"].finalS.value)
-    #K_Spathway = int(TestApp2._Forms["MAIN"].Spathway.value)
-    #K_finalM = int(TestApp2._Forms["MAIN"].finalM.value) + K_finalS
-    #
-    #B_nelec = int(TestApp2._Forms["SPIN2"].numElectron.value)
-    #B_finalS = int(TestApp2._Forms["SPIN2"].finalS.value)
-    #B_Spathway = int(TestApp2._Forms["SPIN2"].Spathway.value)
-    #B_finalM = int(TestApp2._Forms["SPIN2"].finalM.value) + B_finalS
-    #
-    #orb_choice = TestApp2.options
-    #slk =  TestApp2._Forms["ORB1"].Orbitals
-    #ket = [orb_choice[i.value[0]]  for i in slk]
-    #slb =  TestApp2._Forms["ORB2"].Orbitals
-    #bra = [orb_choice[i.value[0]]  for i in slb]
-    K_nelec = 4
-    K_finalS = 1
-    K_Spathway = 1
-    K_finalM = 1
+    TestApp2 = MyApplication2()
+    TestApp2.run()
+    K_nelec = int(TestApp2._Forms["MAIN"].numElectron.value)
+    K_finalS = int(TestApp2._Forms["MAIN"].finalS.value)
+    K_Spathway = int(TestApp2._Forms["MAIN"].Spathway.value)
+    K_finalM = int(TestApp2._Forms["MAIN"].finalM.value) + K_finalS
     
-    B_nelec = 4
-    B_finalS = 1
-    B_Spathway = 0
-    B_finalM = 1
+    B_nelec = int(TestApp2._Forms["SPIN2"].numElectron.value)
+    B_finalS = int(TestApp2._Forms["SPIN2"].finalS.value)
+    B_Spathway = int(TestApp2._Forms["SPIN2"].Spathway.value)
+    B_finalM = int(TestApp2._Forms["SPIN2"].finalM.value) + B_finalS
     
+    orb_choice = TestApp2.options
+    slk =  TestApp2._Forms["ORB1"].Orbitals
+    ket = [orb_choice[i.value[0]]  for i in slk]
+    slb =  TestApp2._Forms["ORB2"].Orbitals
+    bra = [orb_choice[i.value[0]]  for i in slb]
+    #K_nelec = 4
+    #K_finalS = 1
+    #K_Spathway = 1
+    #K_finalM = 1
+    #
+    #B_nelec = 4
+    #B_finalS = 1
+    #B_Spathway = 0
+    #B_finalM = 1
+    #ket = ["h_1","l_1","h_2","l_2"]
+    #bra = ["h_1","l_1","h_2","l_2"]
     print("Selected Spatial Orbitals for Kra")
-    ket = ["h_1","l_1","h_2","l_2"]
+    
     print(ket)
     
     print("Selected Spatial Orbitals for Bra")
-    bra = ["h_1","l_1","h_2","l_2"]
+    
     print(bra)
     
     PrintP = False
