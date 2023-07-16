@@ -7,7 +7,7 @@ a given number of electron.
 -----------
 Description
 -----------
-This program the generate the configurations state function using branching diagram for a given spin state based on $S^{2}$ and $S_{z}$ with a specific spin configuration of it's subsystem using branching diagram. The program allow the configuration of electrons to be distributed in set of spatial orbital. Evaluate the coupling $\langle \Psi \vert H \vert \Phi \rangle $
+This program the generate the configurations state function using branching diagram for a given spin state based on $S^{2}$ and $S_{z}$ with a specific spin configuration of it's subsystem using branching diagram. The program allow the configuration of electrons to be distributed in set of spatial orbital. Evaluate the coupling $\langle \Psi \vert H \vert \Phi \rangle $ from the derived electronic configuration of state.
 
 
 ------------
