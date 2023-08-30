@@ -29,6 +29,7 @@ To evaluate the coupling expression use program SymbolicCI-Coupling.py
      SymbolicCI-Coupling.py
 
 Before running the coupling program it is advised to visit https://roehr-lab.github.io/im1.html to explore the spin chain configuration you want to evaluate.
+Here an example of evaluation of coupling between the state $\\langle S_{1}S_{0} \vert  H \vert ^{1}T T \rangle $
 
 
 .. image:: images/i10.png
