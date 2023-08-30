@@ -31,8 +31,8 @@ Run
 
 
 .. image:: images/i1.png
-    :height: 500px
-    :width: 1000px
+    :height: 1000px
+    :width: 2000px
 ------------
 Requirements
 ------------
