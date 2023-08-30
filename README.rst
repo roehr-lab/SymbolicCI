@@ -27,6 +27,15 @@ Run
 
      SymbolicCI-Coupling.py
 
+
+.. image:: images/i10.png
+    :height: 850px
+    :width: 1000px
+
+.. image:: images/i11.png
+    :height: 850px
+    :width: 1000px
+
 ![i1](images/i1.jpg)
 
 
@@ -66,13 +75,6 @@ Run
     :height: 450px
     :width: 1000px
 
-.. image:: images/i10.png
-    :height: 450px
-    :width: 1000px
-
-.. image:: images/i11.png
-    :height: 450px
-    :width: 1000px
 
 .. image:: images/i12.png
     :height: 950px
