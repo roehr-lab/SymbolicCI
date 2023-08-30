@@ -75,7 +75,7 @@ After all the selection is complete the program ran evaluation process.
     :height: 950px
     :width: 1000px
 
-The coupling term is printed out. (Note this example coupling has two electron integrals term only. So no One electron integral terms are printed)
+The coupling terms are printed out. (Note this example coupling has two electron integrals terms only. So no One electron integral terms are printed)
 
 ------------
 Requirements
