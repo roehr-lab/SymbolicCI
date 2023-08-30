@@ -30,7 +30,7 @@ Run
 ![i1](images/i1.jpg)
 
 
-.. image:: https://raw.github.com/git-big-picture/git-big-picture/master/screenshots/after.png
+.. image:: images/i1.jpg
     :height: 280px
     :width:  456px
 ------------
