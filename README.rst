@@ -31,8 +31,8 @@ Run
 
 
 .. image:: images/i1.jpg
-    :height: 100 %
-    :width: 100 %
+    :height: 100px
+    :width: 100px
 ------------
 Requirements
 ------------
