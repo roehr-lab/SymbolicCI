@@ -29,6 +29,8 @@ To evaluate the coupling expression use program SymbolicCI-Coupling.py
      SymbolicCI-Coupling.py
 
 Before running the coupling program it is advised to visit https://roehr-lab.github.io/im1.html to explore the spin chain configuration you want to evaluate.
+
+
 .. image:: images/i10.png
     :height: 850px
     :width: 1000px
