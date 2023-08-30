@@ -54,7 +54,7 @@ To evaluate the coupling expression use program SymbolicCI-Coupling.py
 
      SymbolicCI-Coupling.py
 
-Prior to initiating the coupling calculation program, it is recommended to visit the following website: [https://roehr-lab.github.io/im1.html](https://roehr-lab.github.io/im1.html). This webpage offers a user-friendly interface to explore and configure the spin chain arrangement that you intend to evaluate. The process involves the following steps:
+Prior to initiating the coupling calculation program, it is recommended to visit the following website: [https://roehr-lab.github.io/im1.html]. This webpage offers a user-friendly interface to explore and configure the spin chain arrangement that you intend to evaluate. The process involves the following steps:
 
 1. Enter the desired number of electrons for your system.
 2. Utilize the sliders provided for "final S," "Pathway of S," and "Final M."
