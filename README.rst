@@ -60,15 +60,15 @@ Run
     :width: 1000px
 
 .. image:: images/i6.png
-    :height: 450px
+    :height: 750px
     :width: 1000px
 
 .. image:: images/i7.png
-    :height: 450px
+    :height: 750px
     :width: 1000px
 
 .. image:: images/i8.png
-    :height: 450px
+    :height: 750px
     :width: 1000px
 
 .. image:: images/i9.png
