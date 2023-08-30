@@ -74,6 +74,10 @@ Run
     :height: 450px
     :width: 1000px
 
+.. image:: images/i12.png
+    :height: 450px
+    :width: 1000px
+
 ------------
 Requirements
 ------------
