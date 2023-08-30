@@ -49,22 +49,12 @@ This is the branching diagram of two triplet subsystem combination giving Single
     :height: 450px
     :width: 1000px
 
-.. image:: images/i2.png
-    :height: 450px
-    :width: 1000px
-
-.. image:: images/i3.png
-    :height: 450px
-    :width: 1000px
-
 .. image:: images/i4.png
     :height: 450px
     :width: 1000px
 
-.. image:: images/i5.png
-    :height: 450px
-    :width: 1000px
 
+After selecting the spin configuration for the Bra and Ket of the wave function the spatial orbital for each electron is selected.
 .. image:: images/i6.png
     :height: 750px
     :width: 1000px
