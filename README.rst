@@ -22,10 +22,6 @@ By combining these capabilities, the program empowers researchers to analyze com
 -----------
 Description
 -----------
-This program the generate the configurations state function using branching diagram for a given spin state based on $S^{2}$ and $S_{z}$ with a specific spin configuration of it's subsystem using branching diagram. The program allow the configuration of electrons to be distributed in set of spatial orbital/site. Based on the spin and site of electron it generate the qbit operator using pauli matrix for creation and annhilation of electron. Then it evaluates the coupling 
-$$\\langle \\Psi \\vert H \\vert\\Phi\\rangle =  \\substack{\\langle C_{s_{1},a_{1}} \\otimes...\\otimes C_{s_{n},a_{n}} \\vert \\mathbf{O_{1}}\\vert C^{\\dagger}_{s_{1},a_{1}}\\otimes...\\otimes C^{\\dagger}_{s_{n},a_{n}} \\rangle  \\\\ + \\frac{1}{2} \\langle C_{s_{1},a_{1}} \\otimes...\\otimes C_{s_{n},a_{n}} \\vert \\mathbf{O_{2}}\\vert C^{\\dagger}_{s_{1},a_{1}}\\otimes...\\otimes C^{\\dagger}_{s_{n},a_{n}} \\rangle } $$
-from the derived electronic configuration of state using symbolic python.
-
 
 The program operates by generating configuration state functions through a branching diagram approach, focusing on a given spin state characterized by $S^2$ and $S_z$. It considers a specific spin configuration of its subsystem, which is represented using branching diagrams. The program's functionality is as follows:
 
@@ -38,9 +34,7 @@ The program operates by generating configuration state functions through a branc
 3. **Coupling Evaluation**:
    The program evaluates couplings between different electronic states using the derived configuration state functions. The coupling is computed as:
    $$\\langle \\Psi \\vert H \\vert\\Phi\\rangle =  \\substack{\\langle C_{s_{1},a_{1}} \\otimes...\\otimes C_{s_{n},a_{n}} \\vert \\mathbf{O_{1}}\\vert C^{\\dagger}_{s_{1},a_{1}}\\otimes...\\otimes C^{\\dagger}_{s_{n},a_{n}} \\rangle  \\\\ + \\frac{1}{2} \\langle C_{s_{1},a_{1}} \\otimes...\\otimes C_{s_{n},a_{n}} \\vert \\mathbf{O_{2}}\\vert C^{\\dagger}_{s_{1},a_{1}}\\otimes...\\otimes C^{\\dagger}_{s_{n},a_{n}} \\rangle } $$
-   Here, $C_{s_i,a_i}$ represents an electron operator for the $i$-th electron with spin $s_i$ at site $a_i$, and $\mathbf{O_1}$ and $\mathbf{O_2}$ denote the operators for electron creation and annihilation. The coupling is evaluated using symbolic Python operations.
-
-The program's capabilities facilitate a thorough exploration of electronic structure and interactions, allowing for the computation of couplings between different electronic states. This comprehensive approach utilizes symbolic Python to handle complex calculations and generate insights into the quantum behavior of the system.
+   Here, $C_{s_i,a_i}$ represents an electron operator for the $i$-th electron with spin $s_i$ at site $a_i$, and $\\mathbf{O_1}$ and $\\mathbf{O_2}$ denote the operators for electron creation and annihilation. The coupling is evaluated using symbolic Python operations.
 
 ------------
 Installation
