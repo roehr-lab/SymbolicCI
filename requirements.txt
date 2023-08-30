@@ -7,3 +7,4 @@ torch
 pybind11
 npyscreen
 pathos
+pyscf
