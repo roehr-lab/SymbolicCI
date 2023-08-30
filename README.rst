@@ -27,7 +27,7 @@ Run
 
      SymbolicCI-Coupling.py
 
-![My Image](images/i1.png)
+![My Image](/images/i1.png)
 
 ------------
 Requirements
