@@ -85,6 +85,8 @@ This package also contains script to calculate the couplings among all the state
      TrimerCalculate.sh ethene.xyz 0.7 0.0
 
 The script run program SymbolicCI-TrimerCoupling.py and SymbolicCI-TrimerPlot.py consecutively. SymbolicCI-TrimerCoupling.py uses the three command line arguments (1) xyz file of monomer (2) slipped stacking along x  in angstrom (2) slipped stacking along y  in angstrom , contruct trimer and peform initial electronic structure calculation and transformation of integrals. SymbolicCI-TrimerPlot.py calculates the dibatic coupling and energy plot the couplings. 
+
+
 ------------
 Requirements
 ------------
