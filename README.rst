@@ -78,13 +78,13 @@ The coupling terms are printed out. (Note that example coupling has two electron
 
 
 
-This package also contains script to calculate the couplings among all the state  over all singlet mulitplicity of the trimer (three fragment system). The states include local exciton, charge transfer states, paired triplets with singlet multiplicity. 
+This package also contains script to calculate the couplings among all the state  over all singlet mulitplicity of the slipped stack trimer system by slipping along longitudnal(x) and transvesal(y) axis. The states include local exciton, charge transfer states, paired triplets with singlet multiplicity. 
 
 .. code-block:: bash
 
      TrimerCalculate.sh ethene.xyz 0.7 0.0
 
-The script ca
+The script run program SymbolicCI-TrimerCoupling.py and SymbolicCI-TrimerPlot.py consecutively. SymbolicCI-TrimerCoupling.py uses the three command line arguments (1) xyz file of monomer (2) slipped stacking along x  in angstrom (2) slipped stacking along y  in angstrom , contruct trimer and peform initial electronic structure calculation and transformation of integrals. SymbolicCI-TrimerPlot.py calculates the dibatic coupling and energy plot the couplings. 
 ------------
 Requirements
 ------------
