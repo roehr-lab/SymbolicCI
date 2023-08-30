@@ -76,8 +76,15 @@ After the selection of spatial orbitals  is complete the program iterate overall
 
 The coupling terms are printed out. (Note that example coupling has two electron integrals  only. So no One electron integral terms are printed)
 
----
 
+
+This package also contains script to calculate the couplings among all the state  over all singlet mulitplicity of the trimer (three fragment system). The states include local exciton, charge transfer states, paired triplets with singlet multiplicity. 
+
+.. code-block:: bash
+
+     TrimerCalculate.sh ethene.xyz 0.7 0.0
+
+The script ca
 ------------
 Requirements
 ------------
