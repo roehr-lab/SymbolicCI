@@ -33,7 +33,7 @@ The program operates by generating configuration state functions through a branc
 
 3. **Coupling Evaluation**:
    The program evaluates couplings between different electronic states using the derived configuration state functions. The coupling is computed as:
-   $$\\langle \\Psi \\vert H \\vert\\Phi\\rangle =  \\substack{\\langle C_{s_{1},a_{1}} \\otimes...\\otimes C_{s_{n},a_{n}} \\vert \\mathbf{O_{1}}\\vert C^{\\dagger}_{s_{1},a_{1}}\\otimes...\\otimes C^{\\dagger}_{s_{n},a_{n}} \\rangle  \\\\ + \\frac{1}{2} \\langle C_{s_{1},a_{1}} \\otimes...\\otimes C_{s_{n},a_{n}} \\vert \\mathbf{O_{2}}\\vert C^{\\dagger}_{s_{1},a_{1}}\\otimes...\\otimes C^{\\dagger}_{s_{n},a_{n}} \\rangle } $$
+   $$\\langle \\Psi \\vert H \\vert\\Phi\\rangle =  \\substack{\\displaystyle \\langle C_{s_{1},a_{1}} \\otimes...\\otimes C_{s_{n},a_{n}} \\vert \\mathbf{O_{1}}\\vert C^{\\dagger}_{s_{1},a_{1}}\\otimes...\\otimes C^{\\dagger}_{s_{n},a_{n}} \\rangle  \\\\ \\displaystyle + \\frac{1}{2} \\langle C_{s_{1},a_{1}} \\otimes...\\otimes C_{s_{n},a_{n}} \\vert \\mathbf{O_{2}}\\vert C^{\\dagger}_{s_{1},a_{1}}\\otimes...\\otimes C^{\\dagger}_{s_{n},a_{n}} \\rangle } $$
    Here, $C_{s_i,a_i}$ represents an electron operator for the $i$-th electron with spin $s_i$ at site $a_i$, and $\\mathbf{O_1}$ and $\\mathbf{O_2}$ denote the operators for electron creation and annihilation. The coupling is evaluated using symbolic Python operations.
 
 ------------
