@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import torch 
-
+import sys
 
 def bothMat(s,F,eri):
     hm = 0
@@ -261,8 +261,10 @@ def plot_fct(del_X=0.0,del_Y=0.0, color="ocean_r"):
     kb = ab*27.2114
     return kb, torch.diagonal(bd)
     
-    
-    
+i = int(sys.argv[1])
+j = int(sys.argv[2])
+ssa,ssb = plot_fct(i*0.1,j*0.1)
+
 plot =[]
 plot2 = []
 for i in range(41):
