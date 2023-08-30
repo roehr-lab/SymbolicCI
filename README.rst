@@ -30,8 +30,8 @@ To evaluate the coupling expression use program SymbolicCI-Coupling.py
 
      SymbolicCI-Coupling.py
 
-Before running the coupling program it is advised to visit https://roehr-lab.github.io/im1.html to explore the spin chain configuration you want to evaluate.
-An example of evaluation of coupling between the states $\\langle S_{1}S_{0} \\vert  H \\vert ^{1}T T \\rangle$ is shown here. Please notedownt The value of "final S", "Pathway of S" and  "Final M" for the desired Bra and Ket. 
+Before running the coupling program it is advised to visit https://roehr-lab.github.io/im1.html to explore the spin chain configuration you want to evaluate. You can enter the number of electrons that is desired in your system and slide the sliders of "final S", "Pathway of S" and  "Final M". The website will show the constructed many electron spin state. 
+An example of evaluation of coupling between the states $\\langle S_{1}S_{0} \\vert  H \\vert ^{1}T T \\rangle$ is shown here. Please note-down the value of "final S", "Pathway of S" and  "Final M" for the desired Bra and Ket. 
 
 .. image:: images/i10.png
     :height: 850px
@@ -64,7 +64,7 @@ After selecting the spin configuration for the Bra and Ket of the wave function 
     :height: 750px
     :width: 1000px
 
-After all the selection is complete the program ran evaluation process.
+After the selection of spatial orbitals  is complete the program iterate overall the determinants of bra, kets , one electron symbolic operator and two electron symbolic operators during the  evaluation process.
 
 .. image:: images/i9.png
     :height: 450px
@@ -75,7 +75,7 @@ After all the selection is complete the program ran evaluation process.
     :height: 950px
     :width: 1000px
 
-The coupling terms are printed out. (Note this example coupling has two electron integrals terms only. So no One electron integral terms are printed)
+The coupling terms are printed out. (Note that example coupling has two electron integrals  only. So no One electron integral terms are printed)
 
 ------------
 Requirements
@@ -87,6 +87,7 @@ Required python packages:
  * numpy, scipy, matplotlib
  * sympy
  * pip 10+
+ * pyscf
 
 ------
 Author
