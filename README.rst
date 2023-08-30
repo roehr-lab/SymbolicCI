@@ -1,7 +1,6 @@
 SymbolicCI
 ----------
-The program generate Configuration Interaction wavefunction and Hamiltonian expression for an arbitrary multiplicity and for 
-a given number of electron.
+The program generate Configuration Interaction wavefunction and expression of couplings and dibatic energy in terms of one electron and two electron integral expressions for an arbitrary multiplicity and for a given number of electrons. With this program used can not only choose the multiplicity of the whole system but also the muliplicities of the subsystem and their order as well as the sign of mutual interactions. 
 
 
 -----------
