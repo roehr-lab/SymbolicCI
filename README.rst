@@ -76,6 +76,8 @@ After the selection of spatial orbitals  is complete the program iterate overall
 
 The coupling terms are printed out. (Note that example coupling has two electron integrals  only. So no One electron integral terms are printed)
 
+---
+
 ------------
 Requirements
 ------------
