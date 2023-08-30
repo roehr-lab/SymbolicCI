@@ -28,6 +28,7 @@ Run
      SymbolicCI-Coupling.py
 
 ![i1](images/i1.jpg)
+.. image:: images/i1.jpg
 
 ------------
 Requirements
