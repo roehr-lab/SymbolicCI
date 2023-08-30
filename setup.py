@@ -40,6 +40,9 @@ setup(name='SymbolicCI',
 
         cmdclass={"build_ext": build_ext},
         #packages=["cgcCALC"],
-        scripts=["%s/%s"%(projectPath,"src/SymbolicCI-Coupling.py"),],
+        scripts=["%s/%s"%(projectPath,"src/SymbolicCI-Coupling.py"),
+                "%s/%s"%(projectPath,"SymbolicCI-TrimerCoupling.py"),
+                "%s/%s"%(projectPath,"SymbolicCI-TrimerPlot.py"),
+                "%s/%s"%(projectPath,"TrimerCalculate.sh"),],
         ext_modules = module2
     )
