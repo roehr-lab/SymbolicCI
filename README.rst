@@ -29,16 +29,21 @@ To evaluate the coupling expression use program SymbolicCI-Coupling.py
      SymbolicCI-Coupling.py
 
 Before running the coupling program it is advised to visit https://roehr-lab.github.io/im1.html to explore the spin chain configuration you want to evaluate.
-Here an example of evaluation of coupling between the state $\\langle S_{1}S_{0} \\vert  H \\vert ^{1}T T \rangle $
+Here an example of evaluation of coupling between the state $\\langle S_{1}S_{0} \\vert  H \\vert ^{1}T T \\rangle $ is shown.
+
 
 
 .. image:: images/i10.png
     :height: 850px
     :width: 1000px
 
+This is the branching diagram of two singlet subsystem combination giving Singlet. This will serve the spin configuration for $S_{0}S_{1}$ 
+
 .. image:: images/i11.png
     :height: 850px
     :width: 1000px
+
+This is the branching diagram of two triplet subsystem combination giving Singlet. This will serve the spin configuration for $^{1}TT$ 
 
 .. image:: images/i1.png
     :height: 450px
