@@ -75,7 +75,7 @@ Run
     :width: 1000px
 
 .. image:: images/i12.png
-    :height: 450px
+    :height: 950px
     :width: 1000px
 
 ------------
