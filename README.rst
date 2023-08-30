@@ -83,6 +83,7 @@ Apart from the previously mentioned functionalities, this package also provides 
 The usage of this script involves providing command line arguments in the following format:
 
 .. code-block:: bash
+
      TrimerCalculate.sh ethene.xyz 0.7 0.0
 
 
