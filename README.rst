@@ -28,8 +28,11 @@ Run
      SymbolicCI-Coupling.py
 
 ![i1](images/i1.jpg)
-.. image:: images/i1.jpg
 
+
+.. image:: https://raw.github.com/git-big-picture/git-big-picture/master/screenshots/after.png
+    :height: 280px
+    :width:  456px
 ------------
 Requirements
 ------------
