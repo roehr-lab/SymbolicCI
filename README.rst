@@ -30,8 +30,8 @@ Run
 ![i1](images/i1.jpg)
 
 
-.. image:: images/i1.jpg
-    :height: 500px
+.. image:: images/i1.png
+    :height: 1000px
     :width: 500px
 ------------
 Requirements
