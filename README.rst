@@ -64,9 +64,7 @@ After selecting the spin configuration for the Bra and Ket of the wave function 
     :height: 750px
     :width: 1000px
 
-.. image:: images/i8.png
-    :height: 750px
-    :width: 1000px
+After all the selection is complete the program ran evaluation process.
 
 .. image:: images/i9.png
     :height: 450px
