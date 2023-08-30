@@ -32,7 +32,7 @@ Run
 
 .. image:: images/i1.jpg
     :height: 100%
-    :width:  auto
+    :width:  100%
 ------------
 Requirements
 ------------
