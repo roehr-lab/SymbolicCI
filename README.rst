@@ -1,14 +1,12 @@
 SymbolicCI
 ----------
 
-The program efficiently generates Configuration Interaction (CI) wavefunctions, facilitating the description of intricate electronic structures within the system. It also formulates expressions for couplings and dibatic energy, utilizing both one-electron and two-electron integral expressions. This flexible approach accommodates arbitrary multiplicities and a specified number of electrons, allowing for a comprehensive analysis.
+The program generates Configuration Interaction (CI) wavefunctions, facilitating the description of intricate electronic structures within the system. It formulates expressions for couplings and dibatic energy, utilizing both one-electron and two-electron integral expressions. This flexible approach accommodates arbitrary multiplicities and a specified number of electrons, allowing for a comprehensive analysis.
 
 Key features of the program include:
-- **Configuration Interaction (CI) Wavefunction Generation**:
-  The program constructs CI wavefunctions that accurately represent the electronic configurations and interactions within the system, capturing correlations and electron exchanges.
 
 - **Couplings and Dibatic Energy Expressions**:
-  The program derives expressions for couplings and dibatic energy, shedding light on transitions and interactions between electronic states. These expressions are derived from one-electron and two-electron integral components, providing insights into the underlying physics.
+  The program derives expressions for couplings and dibatic energy, shedding light on transitions and interactions between electronic states. These expressions are derived from one-electron and two-electron integral components.
 
 - **Multiplicities and Subsystem Configuration**:
   Users can define not only the multiplicity of the entire system but also the multiplicities of the subsystems. This allows for the exploration of diverse electronic scenarios and interactions, encompassing complex interactions between subsystems.
@@ -16,7 +14,6 @@ Key features of the program include:
 - **Subsystem Order and Interaction Sign**:
   The program allows users to specify subsystem order and the sign of mutual interactions, providing customization for studying various electronic structures.
 
-By combining these capabilities, the program empowers researchers to analyze complex electronic systems, investigating different multiplicities, subsystem configurations, and intricate interaction patterns. This versatile tool provides a comprehensive platform for studying electronic structures and properties in diverse and nuanced scenarios.
 
 
 -----------
