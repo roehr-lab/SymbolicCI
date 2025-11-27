@@ -1,17 +1,9 @@
 import sys
-sys.path.insert(0,'/home/anurag/sq2/SlowQuant/')
 import numpy as np
 from qiskit.quantum_info import SparsePauliOp
 from qiskit.circuit import ParameterVector
 from functools import *
 
-
-from slowquant.unitary_coupled_cluster.operators import Epq, hamiltonian_0i_0a
-from slowquant.molecularintegrals.integralfunctions import (
-    one_electron_integral_transform,
-    two_electron_integral_transform,
-)
-from slowquant.unitary_coupled_cluster.fermionic_operator import *
 
 # Define same circuit
 I = np.array([[1, 0],
@@ -192,39 +184,44 @@ for i in range(len(mat)):
         
 print(gp)
 
-spl1 = sum(gp)
-sl = list(spl1.paulis)
-sl2 = list(spl1.coeffs)
 
-idx = 0
-while(True):
-    idxs = []
-    for i in range(len(sl)):
-        if(sl[i] == sl[idx]):
-            idxs.append(i)
-    print(len(sl))
-    print(idxs)
-    for i in range(len(idxs)-1,0, -1):
-        print(i)
-        print(idxs[i])
-        sl.pop(idxs[i])
-        sl2[idxs[0]] += sl2[idxs[i]]
-        sl2.pop(idxs[i])
-    print(len(sl))
-    if(len(sl)-1 == idx):
-        break
-    else:
-        idx += 1
+def clean_paulis(gp):
+    spl1 = sum(gp)
+    sl = list(spl1.paulis)
+    sl2 = list(spl1.coeffs)
+
+    idx = 0
+    while(True):
+        idxs = []
+        for i in range(len(sl)):
+            if(sl[i] == sl[idx]):
+                idxs.append(i)
+        print(len(sl))
+        print(idxs)
+        for i in range(len(idxs)-1,0, -1):
+            print(i)
+            print(idxs[i])
+            sl.pop(idxs[i])
+            sl2[idxs[0]] += sl2[idxs[i]]
+            sl2.pop(idxs[i])
+        print(len(sl))
+        if(len(sl)-1 == idx):
+            break
+        else:
+            idx += 1
 
 
-for i in range(len(sl2)-1, 0, -1):
-    if(abs(sl2[i]) < 1e-8):
-        sl.pop(i)
-        sl2.pop(i)
+    for i in range(len(sl2)-1, 0, -1):
+        if(abs(sl2[i]) < 1e-8):
+            sl.pop(i)
+            sl2.pop(i)
 
-print(sl2)
-print(sl)
-bl = SparsePauliOp(sl,sl2)
+    print(sl2)
+    print(sl)
+    bl = SparsePauliOp(sl,sl2)
+    return bl
+
+bl = clean_paulis(gp)
 print(bl)
 print(bl.to_matrix())
 blm =bl.to_matrix()
@@ -242,39 +239,7 @@ for i in range(len(mat)):
 print(EIP)
 
 
-spl1 = sum(EIP)
-sl = list(spl1.paulis)
-sl2 = list(spl1.coeffs)
-
-idx = 0
-while(True):
-    idxs = []
-    for i in range(len(sl)):
-        if(sl[i] == sl[idx]):
-            idxs.append(i)
-    print(len(sl))
-    print(idxs)
-    for i in range(len(idxs)-1,0, -1):
-        print(i)
-        print(idxs[i])
-        sl.pop(idxs[i])
-        sl2[idxs[0]] += sl2[idxs[i]]
-        sl2.pop(idxs[i])
-    print(len(sl))
-    if(len(sl)-1 == idx):
-        break
-    else:
-        idx += 1
-
-
-for i in range(len(sl2)-1, 0, -1):
-    if(abs(sl2[i]) < 1e-8):
-        sl.pop(i)
-        sl2.pop(i)
-
-print(sl2)
-print(sl)
-kl = SparsePauliOp(sl,sl2)
+kl = clean_paulis(EIP)
 print(kl)
 print(kl.to_matrix())
 klm = kl.to_matrix()
@@ -296,6 +261,6 @@ nk = mlp.T@alm@mlp
 print(alm@mlp)
 print(energy_core)
 print(nk)
-import math as mt
+
 
 print(energy_core + nk)
